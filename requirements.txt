@@ -10,7 +10,7 @@ scikit-learn>=1.0.0
 
 # Database and Storage
 joblib>=1.1.0
-sqlite3  # Built into Python
+#sqlite3  # Built into Python
 
 # Machine Learning and Computer Vision
 matplotlib>=3.5.0
@@ -27,8 +27,8 @@ pytz>=2021.3
 pathlib2>=2.3.0 ; python_version < '3.4'
 
 # Optional: GPU acceleration
-# tensorflow>=2.8.0  # Uncomment for TensorFlow support
-# torch>=1.12.0      # Uncomment for PyTorch support
+#tensorflow>=2.8.0  # Uncomment for TensorFlow support
+#torch>=1.12.0      # Uncomment for PyTorch support
 
 # Development and Testing (optional)
 pytest>=6.2.0
