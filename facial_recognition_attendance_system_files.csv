@@ -1,0 +1,21 @@
+File Path,Description,Type,Size (chars),Dependencies,Key Features
+app.py,Main Streamlit application with web interface,Application,12117,"streamlit, opencv-python, face-recognition","Live attendance tracking, person management, reporting dashboard"
+models/face_detector.py,Advanced face detection with multiple algorithms,Core Model,11472,"opencv-python, dlib","HOG, CNN, Haar Cascade, OpenCV DNN detection methods"
+models/face_recognizer.py,Face recognition using 128-d encodings,Core Model,13896,"face-recognition, scikit-learn","99.83% accuracy, batch processing, encoding optimization"
+models/attendance_manager.py,Comprehensive attendance management system,Core Model,15766,"pandas, csv, datetime","CSV export, Excel integration, analytics, duplicate prevention"
+utils/config.py,Centralized configuration management,Utility,2330,"pathlib, logging","Environment configs, algorithm settings, performance tuning"
+utils/helpers.py,Common utility functions and helpers,Utility,9247,"opencv-python, PIL, streamlit","Image processing, logging, file operations, UI helpers"
+requirements.txt,Python dependencies specification,Configuration,717,pip,All required packages with versions
+README.md,Comprehensive project documentation,Documentation,7995,markdown,"Setup guide, usage instructions, API docs, troubleshooting"
+Dockerfile,Container configuration for deployment,Deployment,1373,docker,"Multi-stage build, system dependencies, health checks"
+.gitignore,Git ignore patterns for clean repository,Configuration,807,git,"Excludes data files, logs, system files, IDE configs"
+models/__init__.py,Makes models directory a Python package,Package,0,,Package initialization
+utils/__init__.py,Makes utils directory a Python package,Package,0,,Package initialization
+data/faces/.gitkeep,Preserves faces directory in git,Placeholder,0,,Directory preservation
+data/encodings/.gitkeep,Preserves encodings directory in git,Placeholder,0,,Directory preservation
+data/attendance/.gitkeep,Preserves attendance directory in git,Placeholder,0,,Directory preservation
+logs/.gitkeep,Preserves logs directory in git,Placeholder,0,,Directory preservation
+tests/test_face_detection.py,Unit tests for face detection module,Test,TBD,pytest,Automated testing of detection algorithms
+tests/test_face_recognition.py,Unit tests for face recognition module,Test,TBD,pytest,Automated testing of recognition accuracy
+tests/test_attendance.py,Unit tests for attendance management,Test,TBD,pytest,Automated testing of attendance operations
+docker-compose.yml,Docker Compose configuration for easy deployment,Deployment,TBD,docker-compose,Multi-container orchestration

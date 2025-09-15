@@ -86,3 +86,105 @@ class Config:
     ALLOWED_IMAGE_EXTENSIONS = ['.jpg', '.jpeg', '.png', '.bmp']
     MAX_IMAGE_SIZE_MB = 10
     MAX_ENCODINGS_PER_PERSON = 15
+
+    @classmethod
+    def get_face_detection_config(cls, method: str = "HOG") -> Dict[str, Any]:
+        """Get configuration for specific face detection method"""
+        method = method.upper()
+        
+        base_config = {
+            'method': method,
+            'min_face_size': (30, 30),
+            'scale_factor': 1.1,
+            'min_neighbors': 5
+        }
+        
+        if method == "HAAR":
+            base_config.update({
+                'cascade_file': 'haarcascade_frontalface_default.xml'
+            })
+        elif method == "HOG":
+            base_config.update({
+                'upsampling': 1
+            })
+        elif method == "CNN":
+            base_config.update({
+                'upsampling': 1,
+                'confidence_threshold': 0.5
+            })
+        elif method == "DNN":
+            base_config.update({
+                'input_size': (300, 300),
+                'mean_values': [104, 117, 123],
+                'confidence_threshold': 0.7
+            })
+        
+        return base_config
+    
+    @classmethod
+    def setup_directories(cls):
+        """Create necessary directories if they don't exist"""
+        directories = [
+            cls.DATA_DIR,
+            cls.FACES_DIR,
+            cls.ENCODINGS_DIR,
+            cls.ATTENDANCE_DIR,
+            cls.LOGS_DIR,
+            cls.MODELS_DIR
+        ]
+        
+        for directory in directories:
+            directory.mkdir(parents=True, exist_ok=True)
+    
+    @classmethod
+    def get_database_config(cls) -> Dict[str, Any]:
+        """Get database configuration"""
+        return {
+            'type': 'csv',  # or 'sqlite', 'mysql'
+            'attendance_file_pattern': 'attendance_{date}.csv',
+            'encoding_file': 'face_encodings.pkl',
+            'names_file': 'face_names.pkl'
+        }
+    
+    @classmethod
+    def get_camera_config(cls) -> Dict[str, Any]:
+        """Get camera configuration"""
+        return {
+            'index': cls.DEFAULT_CAMERA_INDEX,
+            'width': cls.FRAME_WIDTH,
+            'height': cls.FRAME_HEIGHT,
+            'fps': cls.FPS,
+            'buffer_size': 1
+        }
+    
+    @classmethod
+    def get_logging_config(cls) -> Dict[str, Any]:
+        """Get logging configuration"""
+        return {
+            'level': cls.LOG_LEVEL,
+            'format': cls.LOG_FORMAT,
+            'file': cls.LOGS_DIR / cls.LOG_FILE,
+            'max_bytes': 10 * 1024 * 1024,  # 10MB
+            'backup_count': 5
+        }
+
+# Environment-specific configurations
+class DevelopmentConfig(Config):
+    """Development environment configuration"""
+    DEBUG = True
+    LOG_LEVEL = logging.DEBUG
+    DEFAULT_TOLERANCE = 0.5  # More lenient for testing
+    
+class ProductionConfig(Config):
+    """Production environment configuration"""
+    DEBUG = False
+    LOG_LEVEL = logging.WARNING
+    DEFAULT_TOLERANCE = 0.35  # More strict for production
+    AUTO_BACKUP_ENABLED = True
+    
+class TestingConfig(Config):
+    """Testing environment configuration"""
+    DEBUG = True
+    LOG_LEVEL = logging.DEBUG
+    FACES_DIR = Config.BASE_DIR / "test_data" / "faces"
+    ATTENDANCE_DIR = Config.BASE_DIR / "test_data" / "attendance"
