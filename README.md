@@ -2,7 +2,8 @@
 
 A comprehensive, production-ready facial recognition attendance system built with OpenCV, dlib, and Streamlit. Features real-time face detection, CNN-based recognition, and automated attendance tracking.
 
-![System Demo](assets/images/demo.gif)
+---
+<!--![System Demo](assets/images/demo.gif) -->
 
 ## ✨ Features
 
@@ -30,6 +31,8 @@ A comprehensive, production-ready facial recognition attendance system built wit
 - **Live Camera Feed**: Real-time face recognition
 - **Admin Dashboard**: Comprehensive management tools
 - **Mobile Friendly**: Works on tablets and smartphones
+  
+---
 
 ## 🏗️ Architecture
 
@@ -56,6 +59,7 @@ Facial-Recognition-Attendance-System/
 ├── Dockerfile                    # Container setup
 └── README.md                     # Documentation
 ```
+---
 
 ## 🚀 Quick Start
 
@@ -102,6 +106,7 @@ docker build -t attendance-system .
 ```bash
 docker run -p 8501:8501 -v $(pwd)/data:/app/data attendance-system
 ```
+---
 
 ## 📖 Usage Guide
 
@@ -123,6 +128,8 @@ docker run -p 8501:8501 -v $(pwd)/data:/app/data attendance-system
 2. Select date range
 3. Generate and download CSV/Excel reports
 4. View attendance statistics and trends
+
+---
 
 ## ⚙️ Configuration
 
@@ -150,6 +157,7 @@ FRAME_WIDTH = 640
 FRAME_HEIGHT = 480
 FPS = 30
 ```
+---
 
 ## 🔧 Advanced Features
 
@@ -177,6 +185,7 @@ def api_mark_attendance():
     # Your custom logic here
     pass
 ```
+---
 
 ## 📊 Performance Metrics
 
@@ -185,6 +194,8 @@ def api_mark_attendance():
 - **Memory Usage**: ~200MB base, +50MB per 1000 faces
 - **Storage**: ~1KB per face encoding
 - **Scalability**: Tested with 10,000+ faces
+
+---
 
 ## 🧪 Testing
 
@@ -197,6 +208,7 @@ Run specific tests:
 ```bash
 pytest tests/test_face_detection.py -v
 ```
+---
 
 ## 🔒 Security & Privacy
 
@@ -206,12 +218,16 @@ pytest tests/test_face_detection.py -v
 - **Data Retention**: Configurable data retention policies
 - **GDPR Compliance**: Built-in data export and deletion tools
 
+---
+
 ## 📈 Monitoring & Logging
 
 - **System Logs**: Comprehensive logging with rotation
 - **Performance Metrics**: Real-time statistics tracking
 - **Error Monitoring**: Automatic error detection and reporting
 - **Usage Analytics**: Detailed usage patterns and trends
+
+---
 
 ## 🚀 Deployment
 
@@ -226,6 +242,8 @@ pytest tests/test_face_detection.py -v
 - **Azure**: Container Instances
 - **Google Cloud**: Cloud Run
 - **Heroku**: Container deployment
+
+---
 
 ## 🛠️ Troubleshooting
 
@@ -249,6 +267,7 @@ DEFAULT_TOLERANCE = 0.3  # More strict
 # Optimize encodings
 recognizer.optimize_encodings(max_encodings_per_person=5)
 ```
+---
 
 ## 🤝 Contributing
 
@@ -258,9 +277,13 @@ recognizer.optimize_encodings(max_encodings_per_person=5)
 4. Push to branch (`git push origin feature/amazing-feature`)  
 5. Open Pull Request
 
+---
+
 ## 📝 License
 
 This project is licensed under the MIT License - see the [LICENSE](LICENSE) file for details.
+
+---
 
 ## 🙏 Acknowledgments
 
@@ -269,12 +292,14 @@ This project is licensed under the MIT License - see the [LICENSE](LICENSE) file
 - [Streamlit](https://streamlit.io/) for the web framework
 - [face_recognition](https://github.com/ageitgey/face_recognition) library
 
+---
 ## 📞 Support
 
-- 📧 Email: your.email@example.com
-- 💬 Issues: [GitHub Issues](https://github.com/yourusername/facial-recognition-attendance-system/issues)
-- 📖 Documentation: [Wiki](https://github.com/yourusername/facial-recognition-attendance-system/wiki)
+- 📧 Email: singhsonalika5@gmail.com
+- 💬 Issues: [GitHub Issues](https://github.com/Sonalikasingh17/facial-recognition-attendance-system/issues)
+- 📖 Documentation: [Wiki](https://github.com/Sonalikasingh17/facial-recognition-attendance-system/wiki)
 
+---
 ## 🔄 Changelog
 
 ### v2.0.0 (Latest)
