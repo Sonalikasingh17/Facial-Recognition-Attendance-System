@@ -30,8 +30,7 @@ A comprehensive, production-ready facial recognition attendance system built wit
 - **Streamlit UI**: Modern, responsive web interface
 - **Live Camera Feed**: Real-time face recognition
 - **Admin Dashboard**: Comprehensive management tools
-- **Mobile Friendly**: Works on tablets and smartphones
-  
+- **Mobile Friendly**: Works on tablets and smartphones 
 ---
 
 ## 🏗️ Architecture
@@ -64,7 +63,7 @@ Facial-Recognition-Attendance-System/
 ## 🚀 Quick Start
 
 ### Prerequisites
-- Python 3.8 or higher
+- Python 3.9 or higher
 - Webcam or IP camera
 - 4GB+ RAM recommended
 
@@ -128,7 +127,6 @@ docker run -p 8501:8501 -v $(pwd)/data:/app/data attendance-system
 2. Select date range
 3. Generate and download CSV/Excel reports
 4. View attendance statistics and trends
-
 ---
 
 ## ⚙️ Configuration
@@ -194,8 +192,6 @@ def api_mark_attendance():
 - **Memory Usage**: ~200MB base, +50MB per 1000 faces
 - **Storage**: ~1KB per face encoding
 - **Scalability**: Tested with 10,000+ faces
-
----
 
 ## 🧪 Testing
 
@@ -293,13 +289,14 @@ This project is licensed under the MIT License - see the [LICENSE](LICENSE) file
 - [face_recognition](https://github.com/ageitgey/face_recognition) library
 
 ---
+<!--
 ## 📞 Support
 
 - 📧 Email: singhsonalika5@gmail.com
 - 💬 Issues: [GitHub Issues](https://github.com/Sonalikasingh17/facial-recognition-attendance-system/issues)
 - 📖 Documentation: [Wiki](https://github.com/Sonalikasingh17/facial-recognition-attendance-system/wiki)
 
----
+--->
 ## 🔄 Changelog
 
 ### v2.0.0 (Latest)
