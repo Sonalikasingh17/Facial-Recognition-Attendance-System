@@ -1,6 +1,6 @@
 """
 Facial Recognition Attendance System - Main Streamlit Application
-Built with OpenCV, dlib, and CNN-based architecture for automated attendance tracking
+Built with OpenCV, dlib, and CNN-based architecture for automated attendance tracking 
 """
 
 import streamlit as st
