@@ -7,7 +7,7 @@
 
 1. **Clone and Setup**
 ```bash
-git clone <your-repo-url>
+git clone <your-repo-url> 
 cd facial-recognition-attendance-system
 python -m venv attendance_env
 source attendance_env/bin/activate  # Windows: attendance_env\Scripts\activate
