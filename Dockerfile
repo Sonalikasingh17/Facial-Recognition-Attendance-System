@@ -1,6 +1,6 @@
 # Use Python 3.9 slim image for smaller size
 FROM python:3.9-slim
-
+ 
 # Set working directory
 WORKDIR /app
 
