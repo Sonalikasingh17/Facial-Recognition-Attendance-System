@@ -3,7 +3,7 @@
 
 ## 📊 Project Statistics
 - **Total Files**: 20
-- **Code Size**: 75,720 characters (~1,514 lines)
+- **Code Size**: 75,720 characters (~1,514 lines) 
 - **Core Models**: 4 modules (Face Detection, Recognition, Attendance Management, Main App)
 - **Utility Modules**: 2 (Configuration, Helpers)
 - **Documentation**: Comprehensive README with deployment guide
