@@ -1,4 +1,4 @@
-# 🎯 Facial Recognition Attendance System
+# 🎯 Facial Recognition Attendance System 
 
 A comprehensive, production-ready facial recognition attendance system built with OpenCV, dlib, and Streamlit. Features real-time face detection, CNN-based recognition, and automated attendance tracking.
 
