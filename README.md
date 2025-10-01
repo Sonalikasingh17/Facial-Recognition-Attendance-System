@@ -5,7 +5,7 @@ A comprehensive, production-ready facial recognition attendance system built wit
 ---
 <!--![System Demo](assets/images/demo.gif) --> 
 
-## ✨ Features
+## ✨ Features 
 
 ### 🔍 Advanced Face Detection
 - **Multiple Detection Methods**: HOG, CNN, Haar Cascade, OpenCV DNN
