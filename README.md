@@ -4,7 +4,7 @@ A comprehensive, production-ready facial recognition attendance system built wit
 
 ---
 <!--![System Demo](assets/images/demo.gif) --> 
-
+ 
 ## ✨ Features 
 
 ### 🔍 Advanced Face Detection
