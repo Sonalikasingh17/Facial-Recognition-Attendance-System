@@ -8,7 +8,7 @@ import dlib
 import numpy as np
 from typing import List, Tuple, Optional
 import logging
-from utils.config import Config
+from utils.config import Config 
 
 class FaceDetector:
     """
