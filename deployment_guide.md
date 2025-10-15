@@ -1,7 +1,7 @@
 
 # 🚀 DEPLOYMENT GUIDE - Facial Recognition Attendance System
 
-## Quick Setup (5 minutes)
+## Quick Setup (5 minutes) 
 
 ### Option 1: Local Development Setup
 
