@@ -6,7 +6,7 @@ Implements deep learning-based face recognition with high accuracy
 import numpy as np
 import pickle
 import os
-from typing import List, Tuple, Optional, Dict 
+from typing import List, Tuple, Optional, Dict  
 import face_recognition
 import logging
 from pathlib import Path
