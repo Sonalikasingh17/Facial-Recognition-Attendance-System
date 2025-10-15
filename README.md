@@ -1,6 +1,6 @@
 # 🎯 Facial Recognition Attendance System 
 
-A comprehensive, production-ready facial recognition attendance system built with OpenCV, dlib, and Streamlit. Features real-time face detection, CNN-based recognition, and automated attendance tracking.
+A comprehensive, production-ready facial recognition attendance system built with OpenCV, dlib, and Streamlit. Features real-time face detection, CNN-based recognition, and automated attendance tracking. 
 
 ---
 <!--![System Demo](assets/images/demo.gif) --> 
