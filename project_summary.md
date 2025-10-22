@@ -67,7 +67,7 @@
 - Cloud deployment (AWS ECS, Google Cloud Run, Azure)
 - Load balancing with nginx reverse proxy
 - SSL/HTTPS security configuration
-- Automated backup and monitoring
+- Automated backup and monitoring 
 
 ## 📈 Performance Metrics
 
