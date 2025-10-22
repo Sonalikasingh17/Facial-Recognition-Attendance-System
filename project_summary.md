@@ -81,7 +81,7 @@
 - dlib face_recognition: 99.83% (industry standard)
 - OpenCV LBPH: 89.5% (lightweight)
 - System supports confidence thresholding
-
+ 
 ### Resource Usage
 - Base memory: ~200MB
 - Additional: ~50MB per 1000 registered faces
