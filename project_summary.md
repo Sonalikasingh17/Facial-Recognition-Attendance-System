@@ -7,7 +7,7 @@
 - **Core Models**: 4 modules (Face Detection, Recognition, Attendance Management, Main App)
 - **Utility Modules**: 2 (Configuration, Helpers)
 - **Documentation**: Comprehensive README with deployment guide
-
+ 
 ## 🎯 Key Features Implemented 
 
 ### Advanced Face Detection
