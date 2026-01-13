@@ -88,7 +88,7 @@ pip install -r requirements.txt
 
 4. **Run the application**
 ```bash
-streamlit run app.py
+streamlit run app.py 
 ```
 
 5. **Access the system**
